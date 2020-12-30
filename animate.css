@@ -1,0 +1,225 @@
+.animation.fade-text-right * {
+    animation: fade-text-right 1.5s ease;
+}
+
+.animation.fade-text-left * {
+    animation: fade-text-left 1.5s ease;
+}
+
+.animation.fade-up * {
+    animation: fade-up 1.5s ease;
+}
+
+.animation.fade-down * {
+    animation: fade-down 1.5s ease;
+}
+
+.animation.fade-in * {
+    animation: fade-in 2s ease;
+}
+
+.animation.fade-up-right * {
+    animation: fade-up-right 1.5s ease;
+}
+
+.animation.fade-up-left * {
+    animation: fade-up-left 1.5s ease;
+}
+
+.animation.fade-down-right * {
+    animation: fade-down-right 1.5s ease;
+}
+
+.animation.fade-down-left * {
+    animation: fade-down-left 1.5s ease;
+}
+
+.animation.zoom-in * {
+    animation: zoom-in 1.5s ease;
+}
+
+.animation.zoom-in-up * {
+    animation: zoom-in-up 1.5s ease;
+}
+
+.animation.zoom-in-down * {
+    animation: zoom-in-down 1.5s ease;
+}
+
+.animation.zoom-in-left * {
+    animation: zoom-in-left 1.5s ease;
+}
+
+.animation.zoom-in-right * {
+    animation: zoom-in-right 1.5s ease;
+}
+
+@keyframes fade-text-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+        -webkit-transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fade-text-left {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+        -webkit-transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+    /* 0% {
+        opacity: 0;
+        transform: translate3d(0,-100px,0);
+        -webkit-transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+         transform: translateZ(0);
+        -webkit-transform: translateY(0);
+    } */
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-up-right {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100px, 100px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes fade-up-left {
+    0% {
+        opacity: 0;
+        transform: translate3d(100px, 100px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes fade-down-right {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100px, -100px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes fade-down-left {
+    0% {
+        opacity: 0;
+        transform: translate3d(100px, -100px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(.6);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes zoom-in-up {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100px, 0) scale(.6);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+    }
+}
+
+@keyframes zoom-in-down {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100px, 0) scale(.6);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+    }
+}
+
+@keyframes zoom-in-left {
+    0% {
+        opacity: 0;
+        transform: translate3d(100px, 0, 0) scale(.6);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+    }
+}
+
+@keyframes zoom-in-right {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100px, 0, 0) scale(.6);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+    }
+}
